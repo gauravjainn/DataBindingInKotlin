@@ -1,4 +1,4 @@
-package com.example.gaurav.kotlin_navigationdrawer
+package com.example.gaurav.kotlin_navigationdrawer.activity
 
 import android.os.Bundle
 import android.support.design.widget.NavigationView
@@ -8,9 +8,9 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.example.gaurav.kotlin_navigationdrawer.Fragment.HomeFragment
 import com.example.gaurav.kotlin_navigationdrawer.Fragment.PhotosFragment
 import com.example.gaurav.kotlin_navigationdrawer.Fragment.MoviesFragment
-import com.example.gaurav.kotlin_navigationdrawer.Fragment.HomeFragment
 import com.example.gaurav.kotlin_navigationdrawer.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         nav_view.setNavigationItemSelectedListener(this)
 
-        displayScreen(-1)
+        displayScreen(R.id.nav_home)
     }
 
     override fun onBackPressed() {

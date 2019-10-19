@@ -15,4 +15,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="favoritesFragment">Favorites</string>
+    <string name="no_internet_connection">Please check your internet connection.</string>
+
 </resources>
